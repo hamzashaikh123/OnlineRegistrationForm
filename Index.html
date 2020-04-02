@@ -11,7 +11,7 @@
     <body>
         <div class=heading-container> 
             <header class="header">
-                <h1 id=Title>The Code Review</h1>
+                <h1>The Code Review</h1>
             </header>
 
             <div class="sub-heading">
@@ -109,28 +109,41 @@
                         <h2 id="Newsletter_heading">Newsletter</h2>
                         <p>Select the newsletters you'd like to receive</p>
                     
-                    <input type="checkbox" id="HTML_News" value="HTML_News" name="HTML_News">
-                    <label id="HTML_News">HTML News</label> <br>
+                    <div class="checkbox_option">
+                        <input type="checkbox" id="HTML_News" value="HTML_News" name="HTML_News">
+                        <label id="HTML_News">HTML News</label> <br>
+                    </div>  
+                    
+                    <div class="checkbox_option">
+                        <input type="checkbox" id="CSS_News" value="CSS_News" name="CSS_News">
+                        <label id="CSS_News">CSS News</label> <br>
+                    </div>
 
-                    <input type="checkbox" id="CSS_News" value="CSS_News" name="CSS_News">
-                    <label id="CSS_News">CSS News</label> <br>
-
-                    <input type="checkbox" id="Javascript_News" value="Javascript_News" name="Javascript_News">
-                    <label id="Javascript_News">Javascript News</label> <br>
+                    <div class="checkbox_option">
+                        <input type="checkbox" id="Javascript_News" value="Javascript_News" name="Javascript_News">
+                        <label id="Javascript_News">Javascript News</label> <br>
+                    </div>
 
                     <p>Newsletter Format</p>
-                    <input type="radio" for="HTML" value="HTML" name="HTML">
-                    <label id="HTML">HTML</label> <br>
+                    <div class="checkbox_option">
+                        <input type="radio" for="HTML" value="HTML" name="HTML">
+                        <label id="HTML">HTML</label> <br>
+                    </div>
 
-                    <input type="radio" for="Plain_Text" value="Plain_Text" name="Plain_Text">
-                    <label id="Plain_Text">Plain Text</label> <br>
+                    <div class="checkbox_option">
+                        <input type="radio" for="Plain_Text" value="Plain_Text" name="Plain_Text">
+                        <label id="Plain_Text">Plain Text</label> <br>
+                    </div>
 
                     <label for ="other_topics">Other topics you'd like to hear about</label><br>
                     <textarea id="other_topics" name="other_topics"></textarea>
+
                 </fieldset>
             </div>
-
-            <button type="submit" id="btn">Submit</button>
+            
+            <div class="button">
+                <button type="submit" id="btn">Submit</button>
+            </div>
         </form>
     </body>
 
