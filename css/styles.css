@@ -1,7 +1,13 @@
+@font-face {
+    font-family: "Merriweather";
+      src: url('../Merriweather/Merriweather-Regular.ttf') format('truetype');  
+  }
+
 *,*:before,*:after {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    font-family: 'Merriweather',Arial, Helvetica, sans-serif;
 }
 /* Heading styling */
 .heading-container{
@@ -13,13 +19,16 @@
 .sub-heading{
     text-align: center;
 }
-
+.bold_heading{
+    font-weight: bold;
+}
 
 
 .header {
     background-color: #32445c;
     color: white;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .sub-heading {
@@ -76,9 +85,15 @@ textarea{
 }
 
 #btn{
-    display: block;
-    width: 100%;
-    height: 100%;
     background-color:#69d6bd;
+    padding: 30px 15px 20px;
+    width: 100%;
+    color: white;
+}
+
+
+/* footer styling */
+.footer{
+    text-align: center;
 }
 
