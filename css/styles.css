@@ -33,6 +33,8 @@
 
 .sub-heading {
     border-bottom: 5px solid #32445c;
+    width: 75%;
+    margin: 0 auto;
 }
 /* contact information section Form styling */
 .information_container,
@@ -41,19 +43,35 @@
     flex-direction: column;
     width: 95%;
     margin: 0 auto;
+    background-color:#c8cfce;
 }
 
 input[type="text"],
 input[type="email"],
-input[type="number"],
-input[type="address"],
+input[type="tel"],
+input[type="address"]
+{
+    background-color: white;
+    width:100%;
+    text-align: right;
+    margin: 5px;
+    height: 2em;
+    transition: background-color 0.7s ease;
+}
+
 select{
-    background-color: #dcdedc;
+    background-color: white;
     width:100%;
     text-align: right;
     margin: 5px;
     height: 2em;
 }
+
+input:focus,
+textarea:focus{
+    background-color:pink;
+    } 
+    
 .contact_information,
 .user_newsletter{
     border:none;
@@ -70,18 +88,26 @@ select{
 }
 
 textarea{
-    background-color: #dcdedc;
+    background-color: white;
     width:100%;
     border:none;
     height: 7em;
 }
 
+.other_topics_container{
+    Margin-top: 15px;
+}
+#other_topics{
+    margin-top:15px;
+
+}
 /* button styling */
 .button {
     display:flex;
     justify-content: center;
     width: 95%;
     margin: 0 auto;
+    
 }
 
 #btn{
@@ -89,11 +115,25 @@ textarea{
     padding: 30px 15px 20px;
     width: 100%;
     color: white;
+    border-radius: 15px;
 }
+
 
 
 /* footer styling */
 .footer{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: #32445c;
+    color: white;
+    margin-top: 10px;
 }
 
+@media (min-width:1024px) {
+    .information_container,
+    .newsletter_container,
+    .button {
+        width:60%;
+    }
+
+}

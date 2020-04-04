@@ -13,12 +13,13 @@
             <header class="header">
                 <h1>The Code Review</h1>
             </header>
-
-            <div class="sub-heading">
-                <h2>Sign up for our newsletter</h2>
-                <p>Get the latest news on how your code is doing right in your inbox.</p>
-            </div>
         </div>
+
+        <div class="sub-heading">
+            <h2>Sign up for our newsletter</h2>
+            <p>Get the latest news on how your code is doing right in your inbox.</p>
+        </div>
+        
          
         <form action="index.html" method="post">
             <div class="information_container">
@@ -27,21 +28,21 @@
                 
                 <fieldset class="contact_information">
                     <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="user_name" placeholder="Required"><br>
+                    <input required type="text" id="name" name="user_name" placeholder="Required"><br>
 
                     <label for="email">Email Address:</label><br>
-                    <input type="email" id="email" name="user_email" placeholder="Required"><br>
+                    <input required type="email" id="email" name="user_email" placeholder="Required"><br>
                     
                     <label for="number">Phone Number:</label><br>
-                    <input type="number" id="number" name="user_number"><br>
+                    <input type="tel" id="number" name="user_number" placeholder="(XXX)-XXX-XXXX"><br>
 
                     <label for="address">Street Address:</label><br>
-                    <input type="address" id="address" name="user_address"><br>
+                    <input type="text" id="address" name="user_address" placeholder="123 Address Avenue"><br>
 
                     <label for="city">City:</label><br>
-                    <input type="text" id="city" name="user_city"><br>
+                    <input type="text" id="city" name="user_city" placeholder="Toronto, Chicago, New York"><br>
 
-                    <label for="state">Street Address:</label><br>
+                    <label for="state">State:</label><br>
                     <select id="state" name="user_state">
                         <optgroup label="Choose State">
                             <option value="AL">Alabama</option>
@@ -98,7 +99,7 @@
                         </optgroup>
                     </select> <br>
                     
-                    <label for="zip_code">City:</label><br>
+                    <label for="zip_code">Zip Code:</label><br>
                     <input type="text" id="zip_code" name="user_zip_city"><br>
                 </fieldset>
             </div>
@@ -110,34 +111,34 @@
                         <p>Select the newsletters you'd like to receive</p>
                     
                     <div class="checkbox_option">
-                        <input type="checkbox" id="HTML_News" value="HTML_News" name="HTML_News">
-                        <label id="HTML_News">HTML News</label> <br>
+                        <input type="checkbox" id="HTML_News" value="HTML" name="News">
+                        <label>HTML News</label> <br>
                     </div>  
                     
                     <div class="checkbox_option">
-                        <input type="checkbox" id="CSS_News" value="CSS_News" name="CSS_News">
-                        <label id="CSS_News">CSS News</label> <br>
+                        <input type="checkbox" id="CSS_News" value="CSS" name="News">
+                        <label>CSS News</label> <br>
                     </div>
 
                     <div class="checkbox_option">
-                        <input type="checkbox" id="Javascript_News" value="Javascript_News" name="Javascript_News">
-                        <label id="Javascript_News">Javascript News</label> <br>
+                        <input type="checkbox" id="Javascript_News" value="Javascript" name="News">
+                        <label>Javascript News</label> <br>
                     </div>
 
                     <p>Newsletter Format</p>
                     <div class="checkbox_option">
-                        <input type="radio" for="HTML" value="HTML" name="HTML">
-                        <label id="HTML">HTML</label> <br>
+                        <input type="radio" value="HTML" name="format">
+                        <label>HTML</label> <br>
                     </div>
 
                     <div class="checkbox_option">
-                        <input type="radio" for="Plain_Text" value="Plain_Text" name="Plain_Text">
+                        <input type="radio" value="Plain_Text" name="format">
                         <label id="Plain_Text">Plain Text</label> <br>
                     </div>
 
-                    <div class="checkbox_option">
+                    <div class="other_topics_container">
                         <label for ="other_topics">Other topics you'd like to hear about</label><br>
-                        <textarea id="other_topics" name="other_topics"></textarea>
+                        <textarea id="other_topics" name="other_topics" placeholder="Enter other topics here..."></textarea>
                     </div>
 
                 </fieldset>
@@ -147,11 +148,11 @@
                 <button type="submit" id="btn">Sign Up</button>
             </div>
         </form>
-    </body>
-
-    <footer class="footer">
-        <p>Copyright The Code Review</p>
-    </footer>
     
+
+        <footer class="footer">
+            <p>Copyright The Code Review</p>
+        </footer>
+    </body>
 
 </html>
