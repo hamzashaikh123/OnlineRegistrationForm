@@ -135,5 +135,24 @@ textarea{
     .button {
         width:60%;
     }
+    .resize{
+        display: flex;
+        justify-content: start;
+        margin: 0 auto;
+    }
+
+    .resize label {
+        flex-basis: 75%;
+        padding: 0;
+        margin: auto 0;
+
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="address"]{
+        width: 100%;
+    }
 
 }
